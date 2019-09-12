@@ -1,0 +1,15 @@
+# float always a decimal to be entered
+x = float(input())
+
+# Constraint on x, user input
+if 0<=x<=1000:True
+
+# Multiplies users input, "miles", by 1,000 paces
+sol = (x*1000)
+
+# unr, unrounded result, multipy paces by modern mile then divided by Roman mile
+unr = ((sol*5280)/4854)
+
+# Round result to remove decimals
+result = round(unr)
+print(result)
