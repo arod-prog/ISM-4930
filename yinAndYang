@@ -1,0 +1,13 @@
+s = input('')
+
+ts = ([s[i:i+1] for i in range(0, len(s), 1)])
+
+w = ts.count('W')
+
+b = ts.count('B')
+
+
+if w == b:
+    print('1')
+else:
+    print('0')
