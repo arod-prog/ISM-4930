@@ -1,0 +1,14 @@
+num_tree = int(input())
+seedlings = [int(x) for x in input().split()]
+
+seedlings.sort(reverse=True)
+
+aye = []
+m = 0
+for num in seedlings:
+    hold = m + num
+    aye.append(hold)
+    m += 1
+    
+yuh = max(aye)
+print(yuh + 2)
