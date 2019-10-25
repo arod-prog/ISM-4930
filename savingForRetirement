@@ -1,0 +1,12 @@
+b, br, bs, a, ap = map(int,input().split())
+
+blue = br - b
+
+face = blue*bs
+
+baby = 1
+while (face >= ap*baby):
+  baby += 1
+
+blueFaceBaby = a + baby
+print(blueFaceBaby)
